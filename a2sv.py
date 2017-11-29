@@ -342,7 +342,7 @@ if args.update:
 if args.display:
     disoption = args.display
     if((disoption == "n") or (disoption == "N")):
-		print "Running a2sv sillent mode"
+		print "Running a2sv silent mode"
 		displayMode = 1
     else:
 		displayMode = 0
