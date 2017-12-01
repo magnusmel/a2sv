@@ -1,0 +1,14 @@
+ [TARGET]: 216.92.173.235
+ [PORT]: 443
+ [SCAN TIME]: 2017-11-30 16:55:08.504977
+ [VULNERABILITY]
+Vulnerability    CVE           CVSS v2 Base Score         State          
+================ ============= ========================== ===============
+Anonymous Cipher CVE-2007-1858 AV:N/AC:H/Au:N/C:P/I:N/A:N Not Scan.      
+CRIME(SPDY)      CVE-2012-4929 AV:N/AC:H/Au:N/C:P/I:N/A:N Not Scan.      
+HeartBleed       CVE-2014-0160 AV:N/AC:L/Au:N/C:P/I:N/A:N Not Scan.      
+CCS Injection    CVE-2014-0224 AV:N/AC:M/Au:N/C:P/I:P/A:P Not Scan.      
+SSLv3 POODLE     CVE-2014-3566 AV:N/AC:M/Au:N/C:P/I:N/A:N Not Scan.      
+OpenSSL FREAK    CVE-2015-0204 AV:N/AC:M/Au:N/C:N/I:P/A:N Not Scan.      
+OpenSSL LOGJAM   CVE-2015-4000 AV:N/AC:M/Au:N/C:N/I:P/A:N Not Scan.      
+SSLv2 DROWN      CVE-2016-0800 AV:N/AC:M/Au:N/C:P/I:N/A:N Not Scan.      

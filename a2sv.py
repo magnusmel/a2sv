@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*- 
 #==============================================
 #    A2SV(Auto Scanning to SSL Vulnerability  |
-#     by HaHwul(www.hahwul.com)               |
 #     https://github.com/hahwul/a2sv          |
 #==============================================
 import os
@@ -113,7 +112,6 @@ def mainScreen():
     showDisplay(displayMode,"                   ██║  ██║███████╗███████║ ╚████╔╝ ")
     showDisplay(displayMode,"                   ╚═╝  ╚═╝╚══════╝╚══════╝  ╚═══╝  ")
     showDisplay(displayMode,BLUE+"               [Auto Scanning to SSL Vulnerability "+a2sv_version+"]"+END)
-    showDisplay(displayMode,VIOLET+"                     by HaHwul (www.hahwul.com)"+END)
     showDisplay(displayMode,"________________________________________________________________________")
 def runScan(s_type):
     global ccs_result
@@ -281,14 +279,14 @@ def outReport(o_ck,o_path,tmode):
 #----------- -------- -----------
 
     data = [
-    {'v_vuln':'Anonymous Cipher', 'v_cve':'CVE-2007-1858', 'cvss':'AV:N/AC:H/Au:N/C:P/I:N/A:N', 'v_state':anonymous_result},
+    {'v_vuln':'Anonymous_Cipher', 'v_cve':'CVE-2007-1858', 'cvss':'AV:N/AC:H/Au:N/C:P/I:N/A:N', 'v_state':anonymous_result},
     {'v_vuln':'CRIME(SPDY)', 'v_cve':'CVE-2012-4929', 'cvss':'AV:N/AC:H/Au:N/C:P/I:N/A:N', 'v_state':crime_result},
     {'v_vuln':'HeartBleed', 'v_cve':'CVE-2014-0160', 'cvss':'AV:N/AC:L/Au:N/C:P/I:N/A:N', 'v_state':heartbleed_result},
-    {'v_vuln':'CCS Injection', 'v_cve':'CVE-2014-0224', 'cvss':'AV:N/AC:M/Au:N/C:P/I:P/A:P', 'v_state':ccs_result},
-    {'v_vuln':'SSLv3 POODLE', 'v_cve':'CVE-2014-3566', 'cvss':'AV:N/AC:M/Au:N/C:P/I:N/A:N', 'v_state':poodle_result},    
-    {'v_vuln':'OpenSSL FREAK', 'v_cve':'CVE-2015-0204', 'cvss':'AV:N/AC:M/Au:N/C:N/I:P/A:N', 'v_state':freak_result},
-    {'v_vuln':'OpenSSL LOGJAM', 'v_cve':'CVE-2015-4000', 'cvss':'AV:N/AC:M/Au:N/C:N/I:P/A:N', 'v_state':logjam_result},
-    {'v_vuln':'SSLv2 DROWN', 'v_cve':'CVE-2016-0800', 'cvss':'AV:N/AC:M/Au:N/C:P/I:N/A:N', 'v_state':drown_result}
+    {'v_vuln':'CCS_Injection', 'v_cve':'CVE-2014-0224', 'cvss':'AV:N/AC:M/Au:N/C:P/I:P/A:P', 'v_state':ccs_result},
+    {'v_vuln':'SSLv3_POODLE', 'v_cve':'CVE-2014-3566', 'cvss':'AV:N/AC:M/Au:N/C:P/I:N/A:N', 'v_state':poodle_result},    
+    {'v_vuln':'OpenSSL_FREAK', 'v_cve':'CVE-2015-0204', 'cvss':'AV:N/AC:M/Au:N/C:N/I:P/A:N', 'v_state':freak_result},
+    {'v_vuln':'OpenSSL_LOGJAM', 'v_cve':'CVE-2015-4000', 'cvss':'AV:N/AC:M/Au:N/C:N/I:P/A:N', 'v_state':logjam_result},
+    {'v_vuln':'SSLv2_DROWN', 'v_cve':'CVE-2016-0800', 'cvss':'AV:N/AC:M/Au:N/C:P/I:N/A:N', 'v_state':drown_result}
 ]
     fmt = [
     ('Vulnerability',       'v_vuln',   16),
